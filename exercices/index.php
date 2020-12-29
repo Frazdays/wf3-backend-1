@@ -63,12 +63,12 @@
 
 <?php
     // Incrémentation (ajoute 1)
-    $z++;
+    $z++; // Similaire à "++$z"
     $z = $z + 1; // Exactement le même résultat que la ligne précédente
     $z += 1; // Exactement le même résultat que la ligne précédente
 
     // Décrémentation (retire 1)
-    $z--;
+    $z--; // Similaire à "--$z"
     $z = $z - 1; // Exactement le même résultat que la ligne précédente
     $z -= 1; // Exactement le même résultat que la ligne précédente
 
@@ -165,6 +165,8 @@
         echo "<li>".$o."</li>"; // Affiche "Bonjour, monde ! Bonjour, monde !"
     ?>
 </ul>
+
+
 
 
 
