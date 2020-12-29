@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
+    <meta charset="UTF-8"/>
     <link rel="stylesheet" href="style.css"/>
+    <title>ALLO PHP - Site de formation PHP</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="Découvrez les joies de la programmation PHP sur ALLO PHP, meilleur site de formation PHP." />
 </head>
-
-
 
 <body>
 
@@ -41,7 +53,7 @@
     // echo $VITESSE_MAX; est une erreur car ce n'est PAS une VARIABLE mais une CONSTANTE
     // echo VITESSE_MAX;
     // echo " ";
-    // echo constant("VITESSE_MAX");  
+    // echo constant("VITESSE_MAX");
 ?>
 
 <?php echo "<p>".$z."</p>" ?>
@@ -84,7 +96,7 @@
 <?php echo "Hello World!"; // Exactement le même résultat que la ligne précédente ?>
 
 <?php echo "<a href='https://google.fr'>".$z."</a>" ?>
-<?php echo '<a href="https://google.fr">'.$z.'</a>' // Exactement le même résultat que la ligne précédente?>
+<?php echo '<a href="https://google.fr">'.$z.'</a>' // Exactement le même résultat que la ligne précédente ?>
 
 <?php echo 
     "<p>
@@ -106,8 +118,42 @@
 
 <p class="attention">
    Veillez à être CLAIR, BREF et PRECIS sur le danger et 
-   sur le lieu de l'accident
+   sur le lieu de l'accident.
 </p>
+
+<?php print("<h2>YO !</h2>"); ?>
+
+
+<h2>Exemple g : les opérateurs php </h2>
+
+<?php 
+    $x = 20;
+    $y = 6;
+?>
+<ul>
+    <li><?php echo ($x + $y); // Affiche 26 ?></li>
+    <li><?php echo ($x - $y); // Affiche 14 ?></li>
+    <li><?php echo ($x * $y); // Affiche 120 ?></li>
+    <li><?php echo ($x / $y); // Affiche 3.3333333... ?></li>
+    <li><?php echo ($x % $y); // Affiche 2 ?></li>
+
+    <?php
+        $y=20;
+        $y += 100; // similaire à "$y = $y + 100;"
+        echo "<li>".$y."</li>"; // Affiche 120
+        $z=50;
+        $z -= 25;
+        echo "<li>".$z."</li>"; // Affiche 25
+        $i=5;
+        $i *= 6;
+        echo "<li>".$i."</li>"; // Affiche 30
+        $j=10;
+        $j /= 5;
+        echo "<li>".$j."</li>"; // Affiche 2
+    ?>
+</ul>
+
+
 
 </body>
 </html>
