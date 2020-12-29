@@ -138,18 +138,31 @@
     <li><?php echo ($x % $y); // Affiche 2 ?></li>
 
     <?php
-        $y=20;
+        $y = 20;
         $y += 100; // similaire à "$y = $y + 100;"
         echo "<li>".$y."</li>"; // Affiche 120
-        $z=50;
+
+        $z = 50;
         $z -= 25;
         echo "<li>".$z."</li>"; // Affiche 25
-        $i=5;
-        $i *= 6;
+
+        $i = 5;
+        $i *= 6; // similaire à "$i = $i * 6"
         echo "<li>".$i."</li>"; // Affiche 30
-        $j=10;
+
+        $j = 10;
         $j /= 5;
         echo "<li>".$j."</li>"; // Affiche 2
+
+        $k = 20;
+        $k %= 7;
+        echo "<li>".$k."</li>"; // Affiche 6
+
+        $o = "Bonjour";
+        $o .= ", monde ! ";
+        echo "<li>".$o."</li>"; // Affiche "Bonjour, monde !"
+        $o .= $o; // similaire à "$o = $o . $o"
+        echo "<li>".$o."</li>"; // Affiche "Bonjour, monde ! Bonjour, monde !"
     ?>
 </ul>
 
