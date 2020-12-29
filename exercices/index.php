@@ -130,6 +130,7 @@
     $x = 20;
     $y = 6;
 ?>
+
 <ul>
     <li><?php echo ($x + $y); // Affiche 26 ?></li>
     <li><?php echo ($x - $y); // Affiche 14 ?></li>
@@ -163,12 +164,44 @@
         echo "<li>".$o."</li>"; // Affiche "Bonjour, monde !"
         $o .= $o; // similaire à "$o = $o . $o"
         echo "<li>".$o."</li>"; // Affiche "Bonjour, monde ! Bonjour, monde !"
+
+        $x = 100;
+        $y = "100";
+        echo "<li>";
+            var_dump($x == $y); // "valeur égale à"
+        echo "</li>";
+
+        echo "<li>";
+            var_dump($x === $y); // "valeur et type égaux à"
+        echo "</li>";
+
+        echo "<li>";
+            var_dump($x != $y); // "valeur différente de"
+        echo "</li>";
+
+        echo "<li>";
+            var_dump($x !== $y); // "valeur et types différents de"
+        echo "</li>";
+
+        $a = 50;
+        $b = 90;
+        echo "<li>";
+            var_dump($a > $b); // "strictement supérieur à"
+        echo "</li>";
+
+        echo "<li>";
+            var_dump($a >= $b); // "supérieur ou égal à"
+        echo "</li>";
+
+        echo "<li>";
+            var_dump($a < $b); // "strictement inférieur à"
+        echo "</li>";
+
+        echo "<li>";
+        var_dump($a <= $b); // "inférieur ou égal à"
+    echo "</li>";
     ?>
 </ul>
-
-
-
-
 
 </body>
 </html>
